@@ -10,7 +10,7 @@
 
 body{
     
-            overflow: hidden;
+        overflow-x: hidden;
 }
 
 #navbar{
@@ -142,4 +142,43 @@ body{
 #main button:hover {
 
     background: #941313d8;
+}
+
+/* Larger Screen Devices */
+
+@media (max-width:670px) {
+    
+
+        #navbar img {
+                width: 150px;
+                height: auto;
+                transition: 0.5s ease-in-out;
+                cursor: pointer;
+            }
+
+        #navbar ul {
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        #navbar ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 8px;
+            text-decoration: none;
+            font-weight: 300;
+            position: relative;
+        }
+}
+
+/* Smaller Screen Devices */
+
+@media (max-width:504px)   {
+    #main h2 {
+            padding: 20px 20px;
+            color: #ffffff;
+            font-weight: 500;
+            line-height: 2;
+            font-size: 18px;
+        }
 }
