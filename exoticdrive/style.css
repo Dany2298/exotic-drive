@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: inter, sans-serif;
+
+}
+
+body{
+    
+            overflow: hidden;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #020202cc ;
+    box-shadow: 0 5px 14px rgba(255, 0, 0, 0.2);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  
+}
+
+#navbar img{
+    border: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#navbar img:hover{
+    transform: translateX(10px);
+    
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    text-decoration: none;
+    font-weight: 300;
+     position: relative;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Hover effect for each Nav link below */
+
+#navbar ul li .red1:hover::after{
+    content:"";
+    width: 40%;
+    height: 2px;
+    background: #ff00004d;
+    position: absolute;
+    bottom: -4px;
+    left: 29px;
+}
+
+#navbar ul li .red2:hover::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #ff00004d;
+    position: absolute;
+    bottom: -4px;
+    left: 29px;
+}
+
+#navbar ul li .red3:hover::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background: #ff00004d;
+    position: absolute;
+    bottom: -4px;
+    left: 29px;
+}
+
+
+.red-bg{
+    border: 1px solid #ff00001e;
+    border-radius: 8px;
+    padding: 4px 4px;
+    background: #ff00001e;
+    margin-top: -5px;
+    transition: 0.4s ease ;
+}
+
+.red-bg:hover{
+    background-color:#ff00006b ;
+}
+
+/* Main Section  */
+
+
+#main{
+    background-image: url(./images/carbg.jpg);
+    /* filter: brightness(50%);   */
+    opacity: 0.7;
+    height: 90vh;
+    width: 100%;
+    background-position: top 20% right 80%;
+    background-size: cover;
+    text-align: center;
+    
+
+}
+
+#main h2{
+    padding: 40px 20px;
+    color: #ffffff ;
+    font-weight: 500;
+    line-height: 2;
+
+}
+
+#main button{
+    width: 200px;
+    background:#ff00006b;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in ;
+}
+
+#main button:hover {
+
+    background: #941313d8;
+}
